@@ -15,25 +15,34 @@
         <script src="https://kit.fontawesome.com/429e6f2d8a.js" crossorigin="anonymous"></script>
         <!-- CSS STYLES -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>Shoppix</title>
 </head>
 <body class="grid">
-    <navbar class="container-grid text-center d-flex justify-content-between">
-        <div class="d-flex align-items-center w-90">
-            <span><i class="fa-solid fa-money-bill-1-wave"></i></span>
-            <h1>Shoppix</h1>
-        </div>
-        <div class="d-flex align-items-center text-center">
-            <span><i class="fa-solid fa-bars box-border"></i></span>
+    <navbar class="navbar text-center d-flex flex-column align-items-center">
+        <div class="d-flex align-items-center w-90 justify-content-between">
+            <div class="d-flex  align-items-center">
+                <span><i class="fa-solid fa-money-bill-1-wave"></i></span>
+                <h1>Shoppix</h1>
+            </div>
+            <div class="d-flex align-items-center text-center toggler">
+                <span><i class="fa-solid fa-bars box-border"></i></span>
+            </div>
+        </div>   
+              
+        <div class="menu">
+            <p>Inicio</p>
+            <p>Catálogo</p>
+            <p>Ofertas</p>
+            <p>Contacto</p>
         </div>
     </navbar>
-    <section class="filter container-grid p-1">
+    <section class="filter p-1">
         <div class="d-flex flex-column align-items-center">
             <p class="text-center p-1 m-0">Ordenar por:</p>
             <button class="btn-filter d-flex justify-content-between align-items-center"><p class="m-0 p-1">Precio</p><span><i class="fa-solid fa-chevron-down"></i></span></button>
         </div>
     </section>
-    <main class="container-grid text-center d-flex flex-column align-items-center m-0 p-0">
+    <main class="container-grid text-center d-flex flex-column align-items-center justify-content-center m-0 p-0">
         <article class="card">
             <figure class="m-0">
                 <img src="./assets/img/reloj_lacoste.jpg" alt="Reloj Lacoste" class="card-img">
@@ -124,16 +133,16 @@
                 <button class="card-button">Ver Más</button>
             </div>
         </article>
-        <div class="page-index d-flex justify-content-center py-3">
-            
-            <button><i class="fa-solid fa-angles-left"></i></button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button><i class="fa-solid fa-angles-right"></i></button>           
-        </div>
-    </main>    
-    <footer class="container-grid text-center">
+        
+    </main> 
+    <div class="page-index d-flex justify-content-center py-3">
+        <button><i class="fa-solid fa-angles-left"></i></button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button><i class="fa-solid fa-angles-right"></i></button>            
+    </div>   
+    <footer class="text-center footer py-3">
         <div class="d-flex justify-content-center">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>

@@ -3,41 +3,47 @@ html{
 }
 .grid{
     display: grid;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "navbar"
     "section"
     "main"
-    "footer";
+    "footer"; */
     gap: 5px;
 }
+.menu{
+    opacity: 0;
+    position: absolute;
+}
+
 .d-flex{
     display: flex;
     gap: 5px;
 }
 
 navbar{
-    grid-area: "navbar";
-    height: 10vh;
+    grid-area: "nav";
     width: 100%;
     background-color:#af8eb5;
     color: rgb(69, 62, 62);
 }
+
 .filter{
-    grid-area: "section";
+    grid-area: "filter";
     background-color: #82b3c9;
 }
 main{
     grid-area: "main";
 }
-footer{
-    grid-area: "footer";
+
+.footer{
+    grid-area: "foot";
     background-color: #e1bee7;
 }
 
-.container-grid{
+/* .container-grid{
     border: solid 3px #333;
     padding: 1vh 3vw;
-}
+} */
 
 .text-center{
     text-align: center;
@@ -118,4 +124,57 @@ h1{
 .py-3{
 padding-top: 1rem;
 padding-bottom: 1rem;
+}
+
+@media (min-width:536px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "nav filter filter"
+        "nav main main"
+        "nav main main"
+        "foot index index";
+        gap: 0px;
+        grid-template-columns: 20vw 1fr 1fr;
+        
+    }
+    .toggler{
+        position: absolute;
+        opacity: 0;
+    }
+    .menu{
+        opacity: 1;
+        position: relative;
+    }
+    .filter{
+        grid-column: span 2;
+        
+    }
+    navbar{
+        grid-row: span 2;
+    }
+    main{
+        display: grid !important;
+        justify-items: center;
+        grid-column: span 2;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 30px;
+    }
+    main .card{
+        min-height: auto;
+        height: 450px;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .page-index{
+        grid-area: "index";
+        grid-column: span 2;
+    }
+    footer{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
 }
