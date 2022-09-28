@@ -3,7 +3,7 @@
 ---
 
 In this Challenge, i used Vanilla CSS, for full styling the Products Gallery for **"Shoppix E-Commerce"**
->>The principal layout and positioning method was Grid and FlexBox and the use of MediaQueries for different layouts by Devices instead.
+>>The principal layout and positioning method was Grid and FlexBox and the use of MediaQueries for different layouts by any Devices.
 You can view the Deployed Page on GitHub-Pages in this <a href="https://mattcuadros.github.io/Challenge_9_MediaQueries/" target="_blank">Link</a>
 
 ---
