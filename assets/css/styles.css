@@ -24,6 +24,7 @@ html{
 navbar{
     grid-area: "nav";
     width: 100%;
+    min-width: 15vw;
     background-color:#af8eb5;
     color: rgb(69, 62, 62);
 }
@@ -43,7 +44,11 @@ main{
     grid-area: "foot";
     background-color: #e1bee7;
 }
-
+.text-decoration-none{
+    text-decoration: none;
+    color: black;
+    font-size: 80%;
+}
 
 .text-center{
     text-align: center;
@@ -140,7 +145,7 @@ padding-bottom: 1rem;
     background-color: #b3e5fc;
 }
 
-@media (min-width:536px){
+@media (min-width:576px){
     .grid{
         
         grid-template-columns: 15vw 1fr 1fr;
@@ -160,6 +165,7 @@ padding-bottom: 1rem;
         padding: 0.5rem;
         justify-content: start !important;
 
+
     }
     .toggler{
         position: absolute;
@@ -174,6 +180,10 @@ padding-bottom: 1rem;
 
     footer{
         grid-row: 3 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .menu{
         opacity: 1;
